@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0d0f1a, #1b1b2f, #1f1f3b); /* Tonos oscuros azul-morado */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+/* Contenedor */
+div {
+  padding: 40px;
+}
+
+/* Título principal */
+h1 {
+  font-size: 3rem;
+  color: #6cb4f3; /* Azul cian oscuro */
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px rgba(108, 180, 243, 0.3); /* Brillo suave */
+}
+
+/* Subtexto */
+p {
+  font-size: 1.5rem;
+  color: #b48efc; /* Púrpura suave */
+  opacity: 0.9;
+  text-shadow: 0 0 6px rgba(180, 142, 252, 0.2);
+}
