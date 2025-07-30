@@ -1,4 +1,5 @@
 import { header } from "../components/header/headercomponentes.js";
+import { footer } from "../components/footer/footercomponentes.js";
 
 export function dashboard(){
     let seccion = document.createElement('section');
@@ -6,6 +7,7 @@ export function dashboard(){
 
     //header
     seccion.appendChild(header());
+    seccion.appendChild(footer());
 
     return seccion;
 }
