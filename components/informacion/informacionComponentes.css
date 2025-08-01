@@ -1,3 +1,85 @@
 .div-informacion {
-    border: 1px solid red;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+.div-botones {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-tarea, .btn-archivados {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.btn-tarea {
+    border: 2px solid #4daaff;
+    color: #4daaff;
+}
+
+.btn-tarea:hover, .btn-archivados:hover {
+    background-color: #f1f1f1;
+}
+
+/* Tarjeta de información */
+.div-contenido {
+    background-color: #f9fafa;
+    border-radius: 20px;
+    padding: 1.5rem;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Estado */
+.estado {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #b4f4c2;
+    color: #006400;
+    padding: 0.3rem 0.8rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* Título */
+.div-contenido h3 {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Descripción */
+.div-contenido p {
+    font-size: 0.9rem;
+    margin: 0.8rem 0;
+    line-height: 1.4;
+}
+
+/* Subtítulo Integrantes */
+.div-contenido h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Emojis */
+.integrantes {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.emoji-integrante {
+    font-size: 1.4rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    padding: 0.3rem;
 }
