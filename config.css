@@ -20,3 +20,26 @@ html {
     --parrafo: 14rem;
     --spam: 12rem;
 }
+
+/* 📱 Ajustes globales para móviles (iPhone 13 y similares) */
+@media (max-width: 390px) {
+    html {
+        font-size: 14px; /* reducir un poco para móvil */
+    }
+
+    body {
+        overflow-x: hidden; /* evitar scroll lateral */
+    }
+
+    img, video, iframe {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    input, select, textarea, button {
+        width: 100%;
+        min-height: 44px; /* accesible para dedo */
+        font-size: 1rem;
+    }
+}

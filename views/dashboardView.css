@@ -10,3 +10,18 @@
     display: grid;
     grid-template-columns: 75% 25%;
 }
+
+/* 📱 Ajustes para móviles (iPhone 13 y similares) */
+@media (max-width: 390px) {
+    .dashboard {
+        padding: 0.5rem;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    /* Hacer que la sección se apile en columna */
+    .seccion-1 {
+        grid-template-columns: 1fr; /* una sola columna */
+        grid-template-rows: auto auto; /* apiladas */
+        gap: 1rem;
+    }
+}

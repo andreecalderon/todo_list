@@ -4,6 +4,7 @@ import { Tareas } from "../components/tareas/TareasComponentes.js";
 import { informacion } from "../components/informacion/indormacionComponentes.js";
 
 
+
 export function dashboard(){
 
     //data

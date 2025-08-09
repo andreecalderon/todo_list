@@ -1,0 +1,120 @@
+.form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(4px);
+}
+
+.form-modal {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 320px; /* ← MÁS CHICO */
+    animation: fadeIn 0.3s ease-in-out;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.form-modal h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.form-modal label {
+    display: block;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.form-modal input,
+.form-modal textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-modal input:focus,
+.form-modal textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+}
+
+.form-buttons button {
+    flex: 1;
+    padding: 0.6rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.form-buttons button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+}
+
+.form-buttons button[type="submit"]:hover {
+    background-color: #43a047;
+    transform: scale(1.03);
+}
+
+.form-buttons button#cancelar {
+    background-color: #f44336;
+    color: white;
+}
+
+.form-buttons button#cancelar:hover {
+    background-color: #d32f2f;
+    transform: scale(1.03);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .form-modal {
+        max-width: 90%;
+        padding: 1rem;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons button {
+        width: 100%;
+    }
+}

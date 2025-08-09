@@ -1,3 +1,5 @@
+import { formulario } from "../formulario/formulario.js";
+
 export function informacion(tarea) {
     let div = document.createElement('div');
     div.className = "div-informacion";
@@ -9,6 +11,10 @@ export function informacion(tarea) {
     let btnTarea = document.createElement('button');
     btnTarea.textContent = "+ tarea";
     btnTarea.className = "btn-tarea";
+    btnTarea.addEventListener('click', () => {
+    formulario(); // Aquí se llama la función que genera la ventana emergente
+});
+
 
     let btnArchivados = document.createElement('button');
     btnArchivados.textContent = "Archivados";
