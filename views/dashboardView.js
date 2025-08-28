@@ -8,7 +8,7 @@ export async function dashboard() {
 
     try {
         // base de datos
-        const resultado = await fetch("http://localhost:3000/tareas")
+        const resultado = await fetch("https://backend-todo-list-vobu.onrender.com/tareas")
         const datos = await resultado.json();
         let tareasDb = datos;
         console.log(tareasDb);
