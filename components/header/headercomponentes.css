@@ -5,9 +5,9 @@
 
 header {
     display: grid;
-    grid-template-columns: 1fr 12rem auto; /* Ajusta si quieres más compacto */
+    grid-template-columns: 1fr 12rem auto; /* por defecto escritorio */
     align-items: center;
-    gap: 2rem; /* antes 15rem */
+    gap: 2rem;
     color: aliceblue;
     border: 1px solid black;
     padding: 1rem;
@@ -61,7 +61,11 @@ header {
     object-fit: cover;
     border-radius: 100%;
 }
-@media screen and (max-width: 430px) { /* iPhone 13 ancho aprox. */
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* Teléfonos pequeños: hasta 430px */
+@media screen and (max-width: 430px) {
     header {
         grid-template-columns: 1fr; /* todos en columna */
         gap: 1rem;
@@ -78,9 +82,35 @@ header {
         width: 3rem;
         height: 3rem;
     }
+}
 
-    .imagen-logo {
-        object-fit: cover;
+/* Teléfonos medianos: 431px hasta 700px */
+@media screen and (min-width: 431px) and (max-width: 700px) {
+    header {
+        grid-template-columns: 1fr 1fr; /* dos columnas */
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .div-tareas {
+        justify-content: center;
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .div-logo-usuario {
+        width: 3.5rem;
+        height: 3.5rem;
     }
 }
 
+/* Tablets y pantallas hasta 700px */
+@media screen and (max-width: 700px) {
+    header {
+        padding: 0.8rem;
+    }
+
+    .div-tareas {
+        font-size: 0.9rem;
+    }
+}

@@ -47,6 +47,7 @@ footer hr {
   cursor: pointer;
 }
 
+/* Teléfonos pequeños (hasta 430px) */
 @media screen and (max-width: 430px) {
     footer {
         font-size: 0.85rem;
@@ -65,5 +66,49 @@ footer hr {
     .footer-github {
         padding: 6px 12px;
         font-size: 0.85rem;
+    }
+}
+
+/* Teléfonos medianos (431px a 700px) */
+@media screen and (min-width: 431px) and (max-width: 700px) {
+    footer {
+        font-size: 0.9rem;
+        padding: 18px;
+    }
+
+    footer hr {
+        width: 70%;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .footer-github {
+        padding: 7px 14px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablets (701px a 1024px) */
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+    footer {
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    footer hr {
+        width: 65%;
+    }
+
+    .footer-contenido {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .footer-github {
+        padding: 8px 16px;
+        font-size: 1rem;
     }
 }

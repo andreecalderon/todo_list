@@ -18,7 +18,7 @@
     border-radius: 14px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 320px; /* ← MÁS CHICO */
+    max-width: 320px; /* por defecto escritorio */
     animation: fadeIn 0.3s ease-in-out;
     font-family: 'Segoe UI', sans-serif;
 }
@@ -104,6 +104,7 @@
     }
 }
 
+/* Teléfonos pequeños (hasta 430px) */
 @media screen and (max-width: 430px) {
     .form-modal {
         max-width: 90%;
@@ -116,5 +117,33 @@
 
     .form-buttons button {
         width: 100%;
+    }
+}
+
+/* Teléfonos medianos (431px a 700px) */
+@media screen and (min-width: 431px) and (max-width: 700px) {
+    .form-modal {
+        max-width: 400px;
+        padding: 1.2rem;
+    }
+
+    .form-modal h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Tablets (701px a 1024px) */
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+    .form-modal {
+        max-width: 500px;
+        padding: 1.5rem;
+    }
+
+    .form-modal h2 {
+        font-size: 1.4rem;
+    }
+
+    .form-buttons {
+        gap: 0.8rem;
     }
 }
